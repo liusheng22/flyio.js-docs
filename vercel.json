@@ -19,7 +19,7 @@
       "destination": "/index.html"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!static/).*)",
       "destination": "/index.html"
     }
   ],
