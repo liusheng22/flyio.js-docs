@@ -1,10 +1,6 @@
 <template>
   <div class="document-app">
     <div class="sidebar" :class="{ 'sidebar-open': drawer }">
-      <div class="sidebar-header">
-        <button class="close-btn" @click="drawer = false">&times;</button>
-      </div>
-
       <div class="menu-section">
         <div class="menu-item" v-for="(item, i) in comMenus" :key="i" @click="go(item)">
           <span class="menu-icon">
@@ -140,8 +136,9 @@
     transform: translateX(0); // 默认显示
     transition: transform 0.3s ease;
     position: fixed;
-    height: 100vh;
+    height: calc(100vh - 65px);
     z-index: 1000;
+    top: 65px;
     overflow-y: auto;
   }
 
