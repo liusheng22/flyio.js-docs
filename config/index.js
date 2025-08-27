@@ -7,8 +7,6 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    // self server
-    // assetsPublicPath: process.env.NODE_ENV === 'production' ? '/flyio-js/' : './',
     // vercel server
     assetsPublicPath: process.env.NODE_ENV === 'production' ? '/' : './',
     productionSourceMap: true,

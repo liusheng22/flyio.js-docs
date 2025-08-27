@@ -67,6 +67,7 @@
 </style>
 <script>
   import Markdown from './Markdown.vue'
+  import { gitmentConfig } from "../config/gitment.js"
 
   export default {
     components: {
@@ -146,10 +147,10 @@
             container.className = 'gitment-container gitment-footer-container'
             container.innerHTML = `
               Contact me by
-              <a class="gitment-footer-project-link" href="https://juejin.im/user/58211b88a0bb9f0058c25b7f/posts" target="_blank">
+              <a class="gitment-footer-project-link" href="https://juejin.im/user/3171444673228840/posts" target="_blank">
                 Blog
               </a> or
-               <a class="gitment-footer-project-link" href="https://github.com/liusheng22" target="_blank">
+              <a class="gitment-footer-project-link" href="https://github.com/liusheng22" target="_blank">
                 Github
               </a>
             `
@@ -157,16 +158,17 @@
           }
         }
         var gitment = new Gitment({
-          id: this.current.title, // optional
-          owner: 'liusheng',
-          repo: 'flyio-issues',
+          id: this.current.title,
+          owner: gitmentConfig.owner,
+          repo: gitmentConfig.repo,
           theme: myTheme,
           oauth: {
-            client_id: 'cd1c78a4b43550a390f2',
-            client_secret: 'fdb869e6a8e81b0c12fc7e19b1b74a98d81a3a41',
-          }
-          // ...
-          // For more available options, check out the documentation below
+            client_id: gitmentConfig.oauth.client_id,
+            client_secret: gitmentConfig.oauth.client_secret,
+          },
+          labels: gitmentConfig.labels,
+          perPage: gitmentConfig.perPage,
+          maxCommentHeight: gitmentConfig.maxCommentHeight
         })
         gitment.render('comments')
       }

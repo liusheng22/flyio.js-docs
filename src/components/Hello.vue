@@ -6,12 +6,12 @@
     <canvas id="canvas"></canvas>
     <div style="position: absolute; top:5px; right: 10px; z-index: 2; font-size: 16px" id="nav-t" class="hidden-xs-only">
       <a href="https://github.com/liusheng22" style="margin-right: 10px; color: #333; text-decoration: none;">GitHub</a>
-      <a href="https://juejin.im/user/58211b88a0bb9f0058c25b7f" style="color: #333; text-decoration: none;">Blog</a>
+      <a href="https://juejin.im/user/3171444673228840" style="color: #333; text-decoration: none;">Blog</a>
     </div>
     <div style="position: absolute; top:0;left: 0; width: 100%; text-align: center; color: #333; font-size: 16px">
       <!--<div style="height: 3px; background:-webkit-linear-gradient(left,deepskyblue,cornflowerblue)"></div>-->
       <img src="~@/assets/me.png" style="width: 80px; border-radius: 40px; margin-top: 15vh"/>
-      <div style="margin-top: 10px; line-height: 1.7em ">唯有深入，方能浅出<br>不做搬运工，只做高价值内容的生产者<br>我是杜文，欢迎大家关注我</div>
+      <div style="margin-top: 10px; line-height: 1.7em ">唯有深入，方能浅出<br>不做搬运工，只做高价值内容的生产者<br>我是刘胜，欢迎大家关注我</div>
       <div style="padding: 10px 0;" class="hidden-sm-and-up">
         <a href="https://juejin.im/user/3171444673228840" style="margin-right: 16px">Blog</a>
         <a href="https://github.com/liusheng22">Github</a>
