@@ -9,18 +9,18 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/doc/(.*)",
-      "dest": "/index.html"
+      "source": "/doc/(.*)",
+      "destination": "/index.html"
     },
     {
-      "src": "/language",
-      "dest": "/index.html"
+      "source": "/language",
+      "destination": "/index.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
