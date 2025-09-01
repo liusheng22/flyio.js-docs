@@ -5,7 +5,7 @@
 ## 🚀 Live Demo
 
 - **📖 中文文档**: [https://flyio-js.vercel.app](https://flyio-js.vercel.app)
-- **🌐 English Docs**: [https://flyio-js.vercel.app/#/doc/flyio-en/readme](https://flyio-js.vercel.app/#/doc/flyio-en/readme)
+- **🌐 English Docs**: [https://flyio-js.vercel.app/doc/flyio-en/readme](https://flyio-js.vercel.app/doc/flyio-en/readme)
 
 ## Build Setup
 

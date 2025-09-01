@@ -1,5 +1,5 @@
 
-![flyio.js](./static/doc/flyio/fly.png)
+![flyio.js](/static/doc/flyio/fly.png)
 
 ## Flyio.js
 
@@ -39,9 +39,9 @@ Fly positioning is the ultimate solution for Javascript http requests. That is t
 
 ## Documentation
 
-You can find the Fly documentation [on the offical website](https://flyio-js.vercel.app/#/language).
+You can find the Fly documentation [on the official website](https://flyio-js.vercel.app/language).
 
-[中文文档](https://flyio-js.vercel.app/#/doc/flyio/readme)
+[中文文档](https://flyio-js.vercel.app/doc/flyio/readme)
 
 ## Installing
 
@@ -309,7 +309,7 @@ fly.interceptors.response.use(null,null)
 
 ## Node
 
-Whether in browser environment or in Node environment, Fly provides a unified Promise API in the upper layer. This means that, regardless of whether you are in web development or node development, you can perform HTTP requests in the same way. However, because of the difference of node and browser environment, under the environment of Node, Fly in addition to basic API support, also provides some enhancements to the API, the API mainly involves the file download, file upload,  HTTP agents and other powerful features, please refer to [Node enhanced API](https://flyio-js.vercel.app/#/doc/flyio-en/node) .
+Whether in browser environment or in Node environment, Fly provides a unified Promise API in the upper layer. This means that, regardless of whether you are in web development or node development, you can perform HTTP requests in the same way. However, because of the difference of node and browser environment, under the environment of Node, Fly in addition to basic API support, also provides some enhancements to the API, the API mainly involves the file download, file upload,  HTTP agents and other powerful features, please refer to [Node enhanced API](https://flyio-js.vercel.app/doc/flyio-en/node) .
 
 
 
@@ -526,11 +526,11 @@ nfly.interceptors.request.use(...)
 
 ## Http Engine
 
-Fly introduces the concept of Http Engine, and Http Engine is the engine that really initiates http requests. This is typically XMLHttpRequest in browser environment, and in Node environments, any module or library that can initiate a network request can be implemented. Fly can switch the Http Engine freely. In fact, Fly is implemented by switching Http Engine, supporting both the browser environment and the Node environment.However, Http Engine is not limited to Node and browser environment, also can be Android, IOS, electron and so on, it is because of these, Fly has a very unique and powerful feature "request forwarding". Based on the request forwarding, we can implement some useful functions, such as redirecting all the HTTP requests of the hybrid application to Native, and then complete the network request on natvie side.  The benefit of this is that  we can perform unified certificate validation, cookie management, access control and son on on natvie.  More details click here  [http engine](https://flyio-js.vercel.app/#/doc/flyio-en/engine) .
+Fly introduces the concept of Http Engine, and Http Engine is the engine that really initiates http requests. This is typically XMLHttpRequest in browser environment, and in Node environments, any module or library that can initiate a network request can be implemented. Fly can switch the Http Engine freely. In fact, Fly is implemented by switching Http Engine, supporting both the browser environment and the Node environment.However, Http Engine is not limited to Node and browser environment, also can be Android, IOS, electron and so on, it is because of these, Fly has a very unique and powerful feature "request forwarding". Based on the request forwarding, we can implement some useful functions, such as redirecting all the HTTP requests of the hybrid application to Native, and then complete the network request on natvie side.  The benefit of this is that  we can perform unified certificate validation, cookie management, access control and son on on natvie.  More details click here  [http engine](https://flyio-js.vercel.app/doc/flyio-en/engine) .
 
 ## Global Ajax interception
 
-In browsers, you can intercept global Ajax requests by replacing XMLHttpRequest with Fly engine, regardless of what network library the upper layer uses.  More details click here [Ajax hook](https://flyio-js.vercel.app/#/doc/flyio-en/hook)
+In browsers, you can intercept global Ajax requests by replacing XMLHttpRequest with Fly engine, regardless of what network library the upper layer uses.  More details click here [Ajax hook](https://flyio-js.vercel.app/doc/flyio-en/hook)
 
 
 ## Size
@@ -539,7 +539,7 @@ In  browser environment, the size of a library is very important. In this regard
 
 ## Project structure
 
-Learn the project structure of Flyio.js please refer to : [Flyio.js source structure](https://flyio-js.vercel.app/#/doc/flyio-en/files)
+Learn the project structure of Flyio.js please refer to : [Flyio.js source structure](https://flyio-js.vercel.app/doc/flyio-en/files)
 
 
 ## Finally

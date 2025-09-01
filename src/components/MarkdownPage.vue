@@ -1,5 +1,20 @@
 <template>
   <div class="markdown-page">
+    <SEOMeta
+      :title="seoTitle"
+      :description="seoDescription"
+      :keywords="seoKeywords"
+      :canonical="seoCanonical"
+      :image="seoImage"
+      type="article"
+    />
+    <StructuredData
+      type="Article"
+      :title="seoTitle"
+      :description="seoDescription"
+      :url="seoCanonical"
+      :image="seoImage"
+    />
     <div class="content fade" v-show="!loading" :style="{opacity:opacity?0:1}">
       <markdown :data="data"></markdown>
       <div
@@ -67,11 +82,15 @@
 </style>
 <script>
   import Markdown from './Markdown.vue'
+  import SEOMeta from './SEOMeta.vue'
+  import StructuredData from './StructuredData.vue'
   import { gitmentConfig } from "../config/gitment.js"
 
   export default {
     components: {
-      Markdown
+      Markdown,
+      SEOMeta,
+      StructuredData
     },
     data: () => ({
       data: "",
@@ -81,6 +100,64 @@
       loading: false,
       opacity: false
     }),
+    computed: {
+      current() {
+        return this.store.map[this.name] || {}
+      },
+      seoTitle() {
+        const currentTitle = this.current.title || this.name
+        return currentTitle ? `${currentTitle} - Flyio.js Documentation` : 'Flyio.js Documentation'
+      },
+      seoDescription() {
+        // 从 markdown 内容中提取前 160 个字符作为描述
+        if (this.data) {
+          let cleanText = this.data
+            // 移除图片语法 ![alt](url)
+            .replace(/!\[.*?\]\(.*?\)/g, '')
+            // 移除链接语法，保留链接文本 [text](url) -> text
+            .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+            // 移除代码块
+            .replace(/```[\s\S]*?```/g, '')
+            // 移除行内代码
+            .replace(/`[^`]+`/g, '')
+            // 移除标题标记
+            .replace(/#{1,6}\s+/g, '')
+            // 移除粗体斜体标记
+            .replace(/\*\*([^*]+)\*\*/g, '$1')
+            .replace(/\*([^*]+)\*/g, '$1')
+            // 移除表格分隔符和多余的管道符
+            .replace(/\|/g, ' ')
+            .replace(/[-:]+/g, '')
+            // 移除多余的空白字符和换行
+            .replace(/\s+/g, ' ')
+            .trim()
+
+          // 提取前160个字符，确保不在单词中间截断
+          if (cleanText.length > 160) {
+            cleanText = cleanText.substring(0, 160)
+            const lastSpace = cleanText.lastIndexOf(' ')
+            if (lastSpace > 100) { // 确保不会截取得太短
+              cleanText = cleanText.substring(0, lastSpace)
+            }
+            cleanText += '...'
+          }
+
+          return cleanText.length > 0 ? cleanText : 'Flyio.js 是一个轻量级、功能强大的 JavaScript HTTP 请求库'
+        }
+        return 'Flyio.js 是一个轻量级、功能强大的 JavaScript HTTP 请求库'
+      },
+      seoKeywords() {
+        const baseKeywords = 'Flyio.js, HTTP请求, Ajax, JavaScript, 网络请求'
+        const currentTitle = this.current.title
+        return currentTitle ? `${baseKeywords}, ${currentTitle}` : baseKeywords
+      },
+      seoCanonical() {
+        return `https://flyio-js.vercel.app/doc/${this.path}/${this.name}`
+      },
+      seoImage() {
+        return 'https://flyio-js.vercel.app/static/v.png'
+      }
+    },
     beforeRouteUpdate(to, from, next) {
       this.load(to)
       next()
@@ -122,8 +199,10 @@
         fly.get(`/static/doc/${this.path}/${this.name}.md`).then(d => {
           this.data = d.data;
           wait();
-          document.title = "flyio-" + this.current.title;
           this.renderComment();
+
+          // 触发预渲染完成事件
+          document.dispatchEvent(new Event('render-event'));
         }).catch(e => {
           alert(e.message);
           wait()
@@ -171,11 +250,6 @@
           maxCommentHeight: gitmentConfig.maxCommentHeight
         })
         gitment.render('comments')
-      }
-    },
-    computed: {
-      current() {
-        return this.store.map[this.name] || {};
       }
     }
   }

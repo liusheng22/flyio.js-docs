@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/generate-menus.js && node build/build.js",
+    "build": "node build/generate-menus.js && node build/generate-sitemap.js && node build/build.js",
     "gen-menus": "node build/generate-menus.js ",
     "update-doc": "node build/generate-menus.js && node build/copy.js"
   },

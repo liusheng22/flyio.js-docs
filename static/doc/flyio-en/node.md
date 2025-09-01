@@ -32,7 +32,7 @@ Download the picture and save it to the current folder. After success, the data 
   // File size in byte
   size:3000,
   // Absolute path of the downloaded file
-  path:"/user/wendux/xx/v.png"
+  path:"/user/liusheng22/xx/v.png"
 }
 ```
 

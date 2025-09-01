@@ -6,17 +6,16 @@ import App from './App'
 import router from './router'
 var Fly=require("flyio.js/dist/npm/fly")
 Vue.config.productionTip = false
-Object.assign(window,{
-  log:console.log.bind(console),
-  fly:new Fly,
-  Fly,
-  bus:new Vue(),
-  store:{
-    title:"",
-    menus:{},
-    map:{}
-  }
-})
+// 避免使用 Object.assign，改用简单赋值
+window.log = console.log.bind(console)
+window.fly = new Fly
+window.Fly = Fly
+window.bus = new Vue()
+window.store = {
+  title:"",
+  menus:{},
+  map:{}
+}
 
 /* eslint-disable no-new */
 new Vue({
@@ -28,7 +27,7 @@ new Vue({
 
 console.log("%c***********************\n" +
   "本站使用fly作为网络请求库\n" +
-  "github: https://github.com/liusheng22/flyio\n" +
-  "author: wendu, 欢迎 star! \n"+
+  "github: https://github.com/liusheng22/flyio \n" +
+  "author: liusheng22, 欢迎 star! \n"+
   "***********************",'color: teal')
 console.log("您可以直接输入fly验证其功能")
