@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# 指向 sitemap 位置
+Sitemap: https://flyio-js.vercel.app/sitemap.xml
+
+# 优化爬取
+Crawl-delay: 1
+
+# 禁止访问的文件和目录
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.map$

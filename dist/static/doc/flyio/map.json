@@ -1,5 +1,5 @@
 {
-  "pageTitle":"Flyio帮助文档",
+  "pageTitle":"Flyio.js 帮助文档",
   "git":"https://github.com/liusheng22/flyio",
   "menus":[
     {"title":"切换语言","icon":"language","route":"/language"}
