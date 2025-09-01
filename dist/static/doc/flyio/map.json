@@ -47,6 +47,10 @@
           "file": "wx"
         },
         {
+          "title": "小程序DELETE请求传递Body",
+          "file": "delete-with-body"
+        },
+        {
           "title": "与axios、Fetch的对比",
           "file": "compare"
         },
