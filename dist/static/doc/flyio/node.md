@@ -28,7 +28,7 @@ fly.download("http://localhost:8089/static/v.png", "./v.png")
 ```javascript
 {
   size:3000,//文件大小，单位字节
-  path:"/user/wendux/xx/v.png" //下载文件保存在本地的绝对路径
+  path:"/user/liusheng22/xx/v.png" //下载文件保存在本地的绝对路径
 }
 ```
 
