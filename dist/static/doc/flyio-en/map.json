@@ -43,6 +43,10 @@
           "file": "wx"
         },
         {
+          "title": "DELETE Request with Body in Mini Program",
+          "file": "delete-with-body"
+        },
+        {
           "title": "Compare with axios/Fetch",
           "file": "compare"
         },
