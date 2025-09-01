@@ -4,12 +4,31 @@ Allow: /
 # 指向 sitemap 位置
 Sitemap: https://flyio-js.vercel.app/sitemap.xml
 
-# 优化爬取
+# 优化爬取频率
 Crawl-delay: 1
 
-# 禁止访问的文件和目录
+# 禁止访问的静态资源文件和目录
 Disallow: /static/js/
 Disallow: /static/css/
-Disallow: /*.js$
-Disallow: /*.css$
-Disallow: /*.map$
+Disallow: /*.js
+Disallow: /*.css
+Disallow: /*.map
+Disallow: /*.json
+
+# 禁止访问的技术文件
+Disallow: /node_modules/
+Disallow: /build/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /*.config.js
+Disallow: /package*.json
+Disallow: /.*
+
+# 允许重要的静态资源被爬取（图片等）
+Allow: /static/doc/
+Allow: /static/*.png
+Allow: /static/*.jpg
+Allow: /static/*.jpeg
+Allow: /static/*.gif
+Allow: /static/*.svg
+Allow: /static/favicon*

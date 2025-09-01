@@ -1,6 +1,6 @@
 
 
-![flyio.js](./static/doc/flyio/fly.png)
+![flyio.js](/static/doc/flyio/fly.png)
 
 
 ## Flyio.js

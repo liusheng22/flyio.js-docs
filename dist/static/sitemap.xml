@@ -20,69 +20,69 @@
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/config</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2018-10-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/interceptor</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/node</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/redirect</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2018-10-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/engine</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/native</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/hook</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/wx</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/compare</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2018-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/files</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio/faq</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2018-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/readme</loc>
@@ -92,62 +92,62 @@
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/config</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2018-10-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/interceptor</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/node</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/engine</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/native</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/hook</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/wx</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/compare</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2018-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/files</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flyio-js.vercel.app/doc/flyio-en/faq</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2018-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
